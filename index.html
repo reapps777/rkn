@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKN PLAYER - Modern Video Player</title>
+    <style>
+        :root {
+            --primary-color: #fe084e;
+            --dark-black: #000000;
+            --medium-black: #0A0A0A;
+            --light-black: #181818;
+            --white: #FFFFFF;
+            --gray: #BBBBBB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark-black);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: rgba(10, 10, 10, 0.8);
+            padding: 1rem 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .logo h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .logo h1 span {
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+        .device-mockup {
+            margin: 2rem auto 3rem;
+            position: relative;
+        }
+        
+        .phone-outline {
+            width: 270px;
+            height: 540px;
+            background-color: var(--light-black);
+            border-radius: 36px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 8px solid var(--medium-black);
+            overflow: hidden;
+            margin: 0 auto;
+            z-index: 2;
+        }
+        
+        .phone-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--medium-black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .phone-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .red-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(254, 8, 78, 0.3) 0%, rgba(254, 8, 78, 0) 70%);
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .hero-text {
+            margin-top: 0;
+            max-width: 500px;
+        }
+        
+        .hero-text h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+        
+        .hero-text h2 span {
+            color: var(--primary-color);
+        }
+        
+        .hero-text p {
+            font-size: 1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+        
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            align-items: center;
+        }
+        
+        .app-store-btn {
+            width: 160px;
+            margin: 0;
+        }
+        
+        .app-store-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        .app-store-btn img {
+            width: 100%;
+            height: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-section {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+                gap: 2rem;
+            }
+            
+            .hero-text {
+                order: 1;
+                width: 50%;
+                max-width: none;
+            }
+            
+            .device-mockup {
+                order: 2;
+                width: 50%;
+                margin: 0;
+            }
+            
+            .download-buttons {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            
+            .hero-text h2 {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-text h2 {
+                font-size: 2.5rem;
+            }
+            
+            .phone-outline {
+                width: 220px;
+                height: 440px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="rkn.png" alt="RKN Player Logo" width="36" height="36" />
+                    </div>
+                    <h1>RKN <span>PLAYER</span></h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Pricavy</a>
+                    <a href="#">terms</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="hero-section">
+                <div class="device-mockup">
+                    <div class="red-glow"></div>
+                    <div class="phone-outline">
+                        <div class="phone-screen">
+                            <div class="phone-logo">
+                                <img src="rkn.png" alt="RKN Player Logo" width="100" height="100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h2>RKN <span>Player</span></h2>
+                    <p>A New Era of Video Playback.</p>
+                    <div class="download-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.rknplayer.playback&gl=us" class="app-store-btn">
+                            <img src="play.png" alt="Get it on Google Play" />
+                        </a>
+                        <a href="#" class="app-store-btn">
+                            <img src="ios.png" alt="Download on the App Store" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
