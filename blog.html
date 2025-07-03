@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - ClipFy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blog-page">
+        <header class="blog-header">
+            <div class="container">
+                <div class="back-button" onclick="history.back()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Back Home
+                </div>
+            </div>
+        </header>
+
+        <main class="blog-main">
+            <div class="container">
+                <div class="blog-content">
+                    <div class="blog-post">
+                        <div class="post-category">New News</div>
+                        <h1 class="post-title" id="post-title">Loading...</h1>
+                        <div class="post-meta">
+                            <span>By <span id="post-author">Author</span></span>
+                            <span id="post-date">Date</span>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img id="post-image" src="" alt="Post Image">
+                        </div>
+                        
+                        <div class="post-content" id="post-content">
+                        </div>
+                    </div>
+                    
+                    <aside class="blog-sidebar">
+                        <div class="sidebar-section">
+                            <h3>About us</h3>
+                            <p>ClipFy llc is a technology company dedicated to developing innovative mobile solutions for seamless media processing. We specialize in delivering user-friendly, high-performance tools for video, audio, and image editing.</p>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h3>Popular Posts</h3>
+                            <div class="popular-posts" id="popular-posts">
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <footer class="blog-footer">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="clipfy_privacy_policy.html">Privacy Policy</a>
+                    <a href="clipfy_terms.html">Terms & Service</a>
+                </div>
+                <p>&copy; 2025 ClipFy Pro. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

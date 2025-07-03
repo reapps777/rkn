@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "ClipFy - Media Toolkit",
+    "description": "A powerful media toolkit for converting, compressing, and customizing your videos, audios, and images. Effortlessly manage format, size and quality all in one app.",
+    "image2": "assets/video_convert.png"
+  },
+  {
+    "id": 2,
+    "title": "Advanced Video Processing",
+    "description": "Transform your videos with professional-grade tools. Compress, convert, and enhance your media files with lightning-fast processing speeds and maintain quality throughout the conversion process.",
+    "image2": "assets/video_compress.png"
+  },
+    {
+    "id": 3,
+    "title": "Advanced Video Processing",
+    "description": "Transform your videos with professional-grade tools. Compress, convert, and enhance your media files with lightning-fast processing speeds and maintain quality throughout the conversion process.",
+    "image2": "assets/video_trim.png"
+  },
+  {
+    "id": 4,
+    "title": "Audio Enhancement Suite",
+    "description": "Perfect your audio with our comprehensive suite of tools. From noise reduction to format conversion, audio normalization to advanced filtering - everything you need for professional audio editing.",
+    "image2": "assets/image_compress.png"
+  },
+  {
+    "id": 5,
+    "title": "Image Optimization",
+    "description": "Optimize your images for any platform with smart compression algorithms. Resize, compress, and convert while maintaining visual quality and reducing file sizes by up to 80%.",
+    "image2": "assets/audio_convert.png"
+  },
+  {
+    "id": 6,
+    "title": "Batch Processing Power",
+    "description": "Process hundreds of files simultaneously with our powerful batch processing engine. Save hours of work with automated workflows and custom processing presets for different output requirements.",
+    "image2": "assets/audio_trim.png"
+  }
+]
