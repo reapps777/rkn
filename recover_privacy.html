@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #4a4a4a;
+            --title-color: #1a1a1a;
+            --border-color: #e5e5e5;
+            --link-color: #2563eb;
+            --light-bg: #f8f8f8;
+        }
+        .dark-mode {
+            --bg-color: #232429;
+            --text-color: #b8b8b8;
+            --title-color: #ffffff;
+            --border-color: #333333;
+            --link-color: #60a5fa;
+            --light-bg: #2a2a2a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: var(--title-color);
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        h2 {
+            color: var(--title-color);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+        h3 {
+            color: var(--title-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .permission-type {
+            margin-left: 24px;
+            margin-bottom: 20px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .permission-title {
+            font-weight: 600;
+            color: var(--title-color);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .permission-type p:not(.permission-title) {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.85rem;
+            }
+            .permission-type {
+                margin-left: 12px;
+                padding: 12px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .permission-type {
+                margin-left: 8px;
+                padding: 10px 0;
+            }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    
+    <h2>Introduction</h2>
+    <p>Photos & Files Recovery helps users recover deleted photos, videos, audios, and documents. The app also provides tools to back up and restore contacts locally on the device only, remove duplicate files, clean cached WhatsApp media, and delete junk files.</p>
+    <p>All recovery and cleaning operations are performed directly on the user's device. We do not collect, store, or share any personal data or recovered files with third parties.</p>
+    <p>We are committed to protecting your privacy and ensuring that you have full control over your files while using the app.</p>
+
+    <h2>Permissions and Their Uses</h2>
+    <p>To provide reliable file recovery and cleaning features, Photos & Files Recovery requires access to certain parts of your device. Below is a clear explanation of why each permission is needed and how it is used:</p>
+    
+    <div class="permission-type">
+        <p class="permission-title">Contacts Permission:</p>
+        <p>These permissions allow the app to back up and restore your contacts directly on your device. For example, if you accidentally delete a contact, the app can restore it from the local backup. Your contact list is never uploaded to any server and remains only on your phone.</p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Storage Permission (for Android 10 and below):</p>
+        <p>The app needs access to your storage to scan for deleted photos, videos, audios, and documents. With this permission, the app can check your memory for files that can be recovered, and also save recovered files back to your device. Without this access, file recovery would not be possible.</p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Full Access Permission (for Android 11 and above):</p>
+        <p>Starting from Android 11, access to files is more restricted. This permission is required so the app can fully access your files and folders to:</p>
+        <ul>
+            <li>Recover deleted photos, videos, audios, and documents.</li>
+            <li>Detect and remove duplicate files that waste space.</li>
+            <li>Clean up cached WhatsApp media to free storage.</li>
+            <li>Delete unnecessary junk files.</li>
+        </ul>
+        <p>This permission is used only for recovery and cleaning tasks, and your data is never collected or shared outside your device.</p>
+    </div>
+
+    <h3>Important Notes:</h3>
+    <ul>
+        <li>Before requesting any permission, the app displays an explanatory message to inform the user why the permission is needed, ensuring full transparency.</li>
+        <li>Permissions are requested only when a feature requiring them is used. No permission is activated automatically or in the background.</li>
+    </ul>
+
+    <h2>External Services Used by the App</h2>
+    <p>Photos & Files Recovery uses some external services to enhance user experience, analyze performance, manage errors, and handle payments. Below is a list of these services with explanations of why they are used:</p>
+    
+     <div class="permission-type">
+        <p class="permission-title">AdMob (by Google):</p>
+        <p>This service is used to display targeted, non-intrusive ads within the app to support free development.</p>
+        <p><a href="https://support.google.com/admob/answer/6128543">Google AdMob Privacy Policy</a></p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Firebase Analytics:</p>
+        <p>Used to analyze user behavior within the app, such as which features are used and how often, helping us improve the user experience and develop requested features.</p>
+        <p><a href="https://firebase.google.com/support/privacy">Firebase Analytics Privacy Policy</a></p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Firebase Crashlytics:</p>
+        <p>Used to track crashes and technical errors during app usage, helping us quickly identify and fix problems to make the app more stable.</p>
+        <p><a href="https://firebase.google.com/support/privacy">Firebase Crashlytics Privacy Policy</a></p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Google Play Billing:</p>
+        <p>Used to manage in-app purchases, such as upgrading to a premium version of the app. No personal information is collected beyond what is required for the transaction.</p>
+        <p><a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ld=0&ldl=en">Google Play Privacy Policy</a></p>
+    </div>
+
+    <h2>Data Collection</h2>
+    
+    <h3>Data Collected by the App:</h3>
+    <p>Photos & Files Recovery performs all file recovery, backup, and cleaning operations locally on your device. The app does not collect any personal information from users, nor does it upload or share recovered files, contacts, or media with any external servers. All actions are performed on the device to ensure your privacy.</p>
+
+    <h3>Data Collected by External Services:</h3>
+    <p>Some external services used by the app may automatically collect non-personal information, such as device type, operating system, app usage patterns, crash reports, and approximate location.</p>
+    <p>The external services used include:</p>
+    <ul>
+        <li>AdMob – for displaying ads</li>
+        <li>Firebase Analytics – for analyzing app usage</li>
+        <li>Firebase Crashlytics – for detecting crashes</li>
+        <li>Google Play Billing – to process in-app purchases</li>
+    </ul>
+    <p>For more details on what data is collected and how it is used, please review the privacy policies of each of the services listed above.</p>
+
+    <h2>Data Security</h2>
+    <p>At Photos & Files Recovery, we are committed to protecting users' data by implementing technical and organizational measures designed to secure your information and prevent unauthorized access, alteration, or disclosure.</p>
+    <ul>
+        <li>All recovery, backup, and cleaning operations are performed locally on your device without uploading any files or personal data to external servers, minimizing the risk of data leakage.</li>
+        <li>We do not collect or store any sensitive personal information on our servers.</li>
+        <li>The external services we use, such as AdMob, Firebase Analytics, Firebase Crashlytics, and Google Play Billing, adhere to high security standards and strict privacy policies to ensure user data protection.</li>
+    </ul>
+    <p>However, no electronic system can guarantee 100% data security. Therefore, we advise you to take necessary precautions when sharing or storing your personal data.</p>
+
+    <h2>Your Rights and Choices</h2>
+    <p>We believe in users' rights to control their data and privacy, so we provide you with the following options:</p>
+    
+    <div class="permission-type">
+        <p class="permission-title">Permission Control:</p>
+        <p>You can review, modify, or revoke the permissions granted to the app at any time through your device settings.</p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Data Sharing Options:</p>
+        <p>Although the app does not collect personal data directly, some third-party services may collect non-personal information. You can review their privacy policies to manage your preferences.</p>
+    </div>
+
+    <div class="permission-type">
+        <p class="permission-title">Contact Us:</p>
+        <p>For any inquiries, data deletion requests, or privacy-related complaints, you can reach out to us through the contact channels provided inside the app.</p>
+    </div>
+
+    <h2>Children's Privacy</h2>
+    <p>Photos & Files Recovery places great importance on protecting children's privacy. The app is not intended specifically for children under 13 years old and does not knowingly collect personal information from children.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal information without your consent, please contact us immediately so we can delete the data and protect your child's privacy.</p>
+
+    <h2>Privacy Policy Updates</h2>
+    <p>We reserve the right to update this Privacy Policy from time to time to keep up with technological or legal developments, or to improve the app's services. Users will be notified of any significant changes through updates within the app.</p>
+    <p>We recommend reviewing the Privacy Policy periodically to stay informed about any new updates.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns regarding the privacy policy or the use of your data, you can contact us at:</p>
+    <p>Email: <strong style="color: #4E77F2">orion.apps.team@gmail.com</strong></p>
+    <p>Or through the support page inside the app.</p>
+    <p>We are committed to responding to all inquiries as quickly as possible.</p>
+</div>
+</body>
+</html>
